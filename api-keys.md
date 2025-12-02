@@ -1,0 +1,16 @@
+- inkflow dockerhub token:  `dckr_pat_SORBMejlUUfxbTfVaBGRvgY0EAk`
+- daily-ai-info-github-token: `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`
+- cloudfalre gloabl key: `bed9dae38b6ee2cadcd832cf1d7540f4f82b7`
+- iflow api key: `sk-828afa7bb6e26f6cbc28c5bcbfe306b1`
+- kimi inkflow api key: `sk-GsmUydDRwY2cxdsVeQP2enyzhHlppm3uZLR9E2ucuZtLmeaA`
+- gemini api key: `AIzaSyBnllTxBgQY6CIunsWLthUrOK0KTrVcFfU`
+- context7 api key: `ctx7sk-acb96968-7e9e-4210-bf3e-debddf4825b9`
+- supramind auth cloudflare toke：`Qm-QA5X1jqY5qHqoztkQjnSp1j-mVmAn6kM9Yc7k`
+- supramind auth JWT：`KHeZKe95BU2wXY369qUZA2S+Dko/7q3G3i5+W+DrL5Q=`
+- inkflow-dev supabase password：`CydMBpbqm3i6sOfD`
+- inkflow supabase password：`KQNy29GrSOTj7MEh`
+- dev SUPABASE_ANON_KEY：`eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVobGhqcmRhanVheWJnYXpqa3h5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE0MDM3NTcsImV4cCI6MjA3Njk3OTc1N30.vQPGSzHVj4fHV2khj01YXdv-h8xGJHUeeO9LEQHNbQU`
+- dev SUPABASE_SERVICE_KEY：`eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVobGhqcmRhanVheWJnYXpqa3h5Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2MTQwMzc1NywiZXhwIjoyMDc2OTc5NzU3fQ.PHbuOxhRhwsCUOgUq-zeCULmmbrSavgRUzWGXEmpBmw`
+- 腾讯云 OCR SecretId: `AKIDGMGwTp4A0jHdqsnY8WhnfP2SegV73qQn`
+- 腾讯云 OCR SecretKey: `EF2lLhpnW2KZbP0NXTDTXUEl492kEUWN`
+- Music Backend CF Token: `SJAynlSIgoAvXQ9tBX-Wn1pOnGPRjJI9Dkom8L8W`
