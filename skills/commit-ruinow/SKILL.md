@@ -1,5 +1,5 @@
 ---
-name: commit-ruinow
+name: git-commit
 description: 此技能用于创建符合 Conventional Commits 规范的 git commit。当用户需要提交代码变更、创建 commit 时使用此技能。技能会严格分析分支变更内容，生成规范的 commit message，并在用户确认后才执行提交。
 ---
 
