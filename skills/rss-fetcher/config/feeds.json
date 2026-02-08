@@ -1,0 +1,20 @@
+{
+  "feeds": [
+    {
+      "name": "宝玉的分享",
+      "url": "https://baoyu.io/feed.xml"
+    },
+    {
+      "name": "机器之心",
+      "url": "https://wechat2rss.bestblogs.dev/feed/8d97af31b0de9e48da74558af128a4673d78c9a3.xml"
+    },
+    {
+      "name": "月之暗面 Kimi",
+      "url": "https://wechat2rss.bestblogs.dev/feed/c5c43d4bc17bae656763859ed0903bb6314ec6fe.xml"
+    },
+    {
+      "name": "数字生命卡兹克",
+      "url": "https://wechat2rss.bestblogs.dev/feed/ff621c3e98d6ae6fceb3397e57441ffc6ea3c17f.xml"
+    }
+  ]
+}
