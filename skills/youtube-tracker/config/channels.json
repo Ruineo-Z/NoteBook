@@ -1,0 +1,59 @@
+{
+  "channels": [
+    {
+      "url": "https://www.youtube.com/@JeffSu/videos",
+      "id": "UCwAnu01qlnVg1Ai2AbtTMaA",
+      "name": "JeffSu"
+    },
+    {
+      "url": "https://www.youtube.com/@TinaHuang1/videos",
+      "id": "UC2UXDak6o7rBm23k3Vv5dww",
+      "name": "TinaHuang"
+    },
+    {
+      "url": "https://www.youtube.com/@googledeepmind/videos",
+      "id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "name": "GoogleDeepMind"
+    },
+    {
+      "url": "https://www.youtube.com/@TheoreticallyMedia",
+      "id": "UC9Ryt3XOGYBoAJVsBHNGDzA",
+      "name": "@TheoreticallyMedia"
+    },
+    {
+      "url": "https://www.youtube.com/@anthropic-ai",
+      "id": "UCrDwWp7EBBv4NwvScIpBDOA",
+      "name": "@anthropic-ai"
+    },
+    {
+      "url": "https://www.youtube.com/@OpenAI",
+      "id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "name": "@OpenAI"
+    },
+    {
+      "url": "https://www.youtube.com/@googledeepmind",
+      "id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "name": "@googledeepmind"
+    },
+    {
+      "url": "https://www.youtube.com/@it-coffee",
+      "id": "UCXLV-KfDQAFUJ_as9H1Lfbw",
+      "name": "@it-coffee"
+    },
+    {
+      "url": "https://www.youtube.com/@AIsuperdomain",
+      "id": "UCIomFkAj4Vq_rGX2Jot7D8A",
+      "name": "@AIsuperdomain"
+    },
+    {
+      "url": "https://www.youtube.com/@qiuzhi2046",
+      "id": "UCrC3GjeSkxXgJ2hLQ2D-m4w",
+      "name": "@qiuzhi2046"
+    },
+    {
+      "url": "https://www.youtube.com/@suno",
+      "id": "UCB80OYIR33HGCc-_cT0AsUA",
+      "name": "@suno"
+    }
+  ]
+}
