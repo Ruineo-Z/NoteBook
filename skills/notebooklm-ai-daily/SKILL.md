@@ -1,6 +1,6 @@
 ---
 name: notebooklm-ai-daily
-description: 用于执行 NotebookLM 的 AI 日报流水线：创建当日笔记本、按4类中文检索模板用 fast 模式导入来源、在同一对话中筛选出5条可用资讯、继续生成中文视频文案，并可选仅基于这5条来源生成 PPT。适用于用户提出“每日AI资讯/AI日报/NotebookLM检索筛选/视频文案或简报生成”等请求。
+description: 用于执行 NotebookLM 的 AI 日报流水线：创建当日笔记本、按4类中文检索模板用 fast 模式导入来源、在同一对话中筛选出5条可用资讯，再输出可直接交给 Remotion 的 Markdown 分镜文案，并可选仅基于这5条来源生成 PPT。适用于用户提出“每日AI资讯/AI日报/NotebookLM检索筛选/视频脚本或简报生成”等请求。
 ---
 
 # NotebookLM AI Daily
@@ -11,6 +11,7 @@ description: 用于执行 NotebookLM 的 AI 日报流水线：创建当日笔记
 - 来源足够（按 4 类分开检索）
 - 结果可控（强制 5 条 JSON）
 - 对话连续（同一 conversation）
+- 文案可交接（固定 Markdown 分镜模板）
 
 ## Input Parameters
 
@@ -50,11 +51,17 @@ description: 用于执行 NotebookLM 的 AI 日报流水线：创建当日笔记
    - 拿到 `conversation_id` 后，后续必须带 `-c <conversation_id>`
    - 提示词模板见 `references/ask-prompts-zh.md`（要求只输出长度为 5 的 JSON）
 
-6. 在同一对话发起第二次 ask（视频文案）
-   - `notebooklm ask -n <notebook_id> -c <conversation_id> "<视频文案提示词>" --json`
-   - 产出 90–120 秒中文介绍视频脚本
+6. 在同一对话发起第二次 ask（分镜文案）
+   - `notebooklm ask -n <notebook_id> -c <conversation_id> "<视频分镜提示词>"`
+   - 产出 90–120 秒中文分镜文案（Markdown）
+   - 提示词模板见 `references/ask-prompts-zh.md`（固定分镜格式）
 
-7. （可选）仅基于 5 条来源生成 PPT
+7. 交给 Remotion skill 继续生成视频
+   - 将第 6 步 Markdown 原文直接作为输入
+   - 不改写结构，只允许微调措辞和节奏
+   - 若 Remotion skill 需要字段化，再由其内部做解析
+
+8. （可选）仅基于 5 条来源生成 PPT
    - 先把第 5 步 JSON 中的 `source_url` 映射到 `source_id`
    - 再执行：
      - `notebooklm generate slide-deck -n <notebook_id> -s <id1> -s <id2> -s <id3> -s <id4> -s <id5> --format presenter --length short --language zh_Hans --wait --json "基于这5条来源生成10页以内中文简报：概览-重点-趋势-结论"`
@@ -65,6 +72,7 @@ description: 用于执行 NotebookLM 的 AI 日报流水线：创建当日笔记
 
 - 时间窗用自然日：`WINDOW_START` 到 `WINDOW_END`（非滚动 24 小时）
 - 首轮筛选 ask 必须输出：JSON 数组，长度严格等于 5
+- 第二轮分镜 ask 必须输出：固定 Markdown 模板，不要解释文字
 - 排除：向量/Embedding/向量数据库/纯检索基础设施、无发布时间、纯观点、二次搬运、营销软文
 - 同一事件只保留一个主来源，优先官方或一手来源
 - 所有后续 ask 必须在同一 `conversation_id` 中继续
@@ -76,4 +84,4 @@ description: 用于执行 NotebookLM 的 AI 日报流水线：创建当日笔记
 - `conversation_id`
 - 来源统计（`total/ready/error`）
 - 5 条筛选 JSON（含标题、时间、来源、价值、入选理由）
-- 视频文案（90–120 秒）
+- 视频分镜文案（Markdown，可直接交给 Remotion skill）
