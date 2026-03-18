@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nano Banana Prompting"
+  short_description: "Build stronger Nano-Banana image prompts"
+  default_prompt: "Use $nano-banana-prompting to draft or improve a Nano-Banana image prompt for my task."
